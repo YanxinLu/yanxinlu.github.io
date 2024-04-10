@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="DreamBooth inference demo" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin: 20px;
+    }
+    .gallery-image {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 100%;
+    }
+    .gallery-image:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .description {
+        padding: 15px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1>The videos are downsampled to gif for display.</h1>
+<h2>Inference using different base models with the same prompt</h2>
+<h3>Prompt: A cute cat walking on a street</h3>
+<div class="gallery">
+    <div>
+        <img src=".\assets\dreambooth_demo\default.gif" class="gallery-image">
+        <div class="description">
+            dreamlike-photoreal-2.0 (default)
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\SD1.5.gif" class="gallery-image">
+        <div class="description">
+            stable-diffusion-v1.5
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\mymodel.gif" class="gallery-image">
+        <div class="description">
+            fine-tuned DreamBooth model
+        </div>
+    </div>
+</div>
+<h2>Inference using fine-tuned DreamBooth model with different prompts</h2>
+<div class="gallery">
+    <div>
+        <img src=".\assets\dreambooth_demo\grass_n.gif" class="gallery-image">
+        <div class="description">
+            A cute cat walking on the grass.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\concrete_n.gif" class="gallery-image">
+        <div class="description">
+            A cute cat dancing on the concrete.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\sea_n.gif" class="gallery-image">
+        <div class="description">
+            A cute cat swimming in the sea.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\grass.gif" class="gallery-image">
+        <div class="description">
+            A cute yanxinlu cat walking on the grass.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\concrete.gif" class="gallery-image">
+        <div class="description">
+            A cute yanxinlu cat dancing on the concrete.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\sea.gif" class="gallery-image">
+        <div class="description">
+            A cute yanxinlu cat swimming in the sea.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\street.gif" class="gallery-image">
+        <div class="description">
+            A cute yanxinlu cat walking on a street.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\beach.gif" class="gallery-image">
+        <div class="description">
+            A cute yanxinlu cat walking on the beach.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\oil_painting_n.gif" class="gallery-image">
+        <div class="description">
+            An oil painting of cat
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\oil_painting.gif" class="gallery-image">
+        <div class="description">
+            An oil painting of yanxinlu cat
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\van_gogh_n.gif" class="gallery-image">
+        <div class="description">
+            A Van Gogh style cat
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\dreambooth_demo\van_gogh.gif" class="gallery-image">
+        <div class="description">
+            A Van Gogh style yanxinlu cat
+        </div>
+    </div>
+</div>
+</body>
+</html>

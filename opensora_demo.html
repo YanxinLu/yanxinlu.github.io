@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Open-Sora inference demo" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin: 20px;
+    }
+    .gallery-image {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 100%;
+    }
+    .gallery-image:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .description {
+        padding: 15px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1>The videos are downsampled to gif for display.</h1>
+<div class="gallery">
+    <div>
+        <img src=".\assets\opensora_demo\sample0.gif" alt="Singing Cat" class="gallery-image">
+        <div class="description">
+            A cat is singing.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\opensora_demo\sample1.gif" alt="Singing Cat" class="gallery-image">
+        <div class="description">
+            A lovely white cat is sing a song.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\opensora_demo\sample2.gif" alt="Singing Cat" class="gallery-image">
+        <div class="description">
+            A lovely white cat is sing a song in front of a window.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\opensora_demo\sample3.gif" alt="Singing Cat" class="gallery-image">
+        <div class="description">
+            A lovely white cat is sing a song in front of a window. There are trees and birds outside the window.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\opensora_demo\artistic.gif" alt="Artistic" class="gallery-image">
+        <div class="description">
+            artistic
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\opensora_demo\woman.gif" alt="woman" class="gallery-image">
+        <div class="description">
+            Real beautiful woman.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\opensora_demo\twgrass.gif" alt="Grass" class="gallery-image">
+        <div class="description">
+            The video captures the majestic beauty of a waterfall cascading down a cliff into a serene lake. The waterfall, with its powerful flow, is the central focus of the video. The surrounding landscape is lush and green, with trees and foliage adding to the natural beauty of the scene. The camera angle provides a bird's eye view of the waterfall, allowing viewers to appreciate the full height and grandeur of the waterfall. The video is a stunning representation of nature's power and beauty.
+        </div>
+    </div>
+    <div>
+        <img src=".\assets\opensora_demo\waterfall.gif" alt="Waterfall" class="gallery-image">
+        <div class="description">
+            The dynamic movement of tall, wispy grasses swaying in the wind. The sky above is filled with clouds, creating a dramatic backdrop. The sunlight pierces through the clouds, casting a warm glow on the scene. The grasses are a mix of green and brown, indicating a change in seasons. The overall style of the video is naturalistic, capturing the beauty of the landscape in a realistic manner. The focus is on the grasses and their movement, with the sky serving as a secondary element. The video does not contain any human or animal elements.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
